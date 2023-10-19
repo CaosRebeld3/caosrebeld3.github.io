@@ -9,9 +9,11 @@
         ['img/one.png'],
 
         ['img/two.png'],
+        
+        ['img/three.png'],
+        
 
-       
-    );
+      );
 
     var contador=0;
 
