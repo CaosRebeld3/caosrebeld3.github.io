@@ -8,9 +8,9 @@
 
         ['img/one.png'],
 
-        ['img/two.png'],
+        ['img/tw.png'],
         
-        ['img/three.png'],
+        ['img/th.png'],
         
 
       );
