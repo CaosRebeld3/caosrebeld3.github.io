@@ -36,7 +36,7 @@
 
         rotarImagenes();
 
-        setInterval(rotarImagenes,3000);
+        setInterval(rotarImagenes,5000);
 
     }
 
