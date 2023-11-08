@@ -6,7 +6,6 @@
 
     var imagenes=new Array(
 
-        ['img/one.png'],
 
         ['img/tw.png'],
         
