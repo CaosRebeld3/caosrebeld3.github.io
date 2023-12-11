@@ -91,7 +91,7 @@ body {
 #mages {
 	display: block;
 	margin: auto;
-	width: 250px;
+	width: 300px;
 	height: 200px;
 	position: relative;
 	top: 30px;
@@ -154,7 +154,7 @@ a:hover {
 	#mages {
 		display: block;
 		margin: auto;
-		width: 350px;
+		width: 450px;
 		height: 200px;
 		top: 110px;
 		position: relative;
@@ -213,3 +213,4 @@ a:hover {
 
 
 }
+
