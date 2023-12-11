@@ -2,12 +2,10 @@
 
 Created by YipiReb3l
 
-Nací y vivo jugando con las reglas establecidas, 
-ahora creo mis juegos y les pongo mis reglas,
-porque en un juego todo es posible, 
-las vidas son infinitas y yo elijo la historia y el mundo.
+Nací en las cenizas de un mundo en peligro de extincion,  
+vivo jugando segun sus reglas. Ahora creo mis juegos y establezco 
+el mundo y las reglas -_-
 
-I was born and I live playing with the established rules, 
-now I create my games and I set my rules for them, 
-because in a game everything is possible, 
-lives are infinite and I choose the story and the world.
+I was born in the ashes of a world in danger of extinction,
+I live playing according to their rules. Now I create my games and set
+the world and the rules -_-
