@@ -108,7 +108,7 @@ a:hover {
 }
 .pie {
 	position: relative;
-	color: silver;
+	color: #505050;
 	font-family:  courier;
 	font-size: 19px;
 	top: 45px;
