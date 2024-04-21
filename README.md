@@ -1,6 +1,6 @@
-# yipireb3l.github.io
+# caosrebeld3.github.io
 
-Created by YipiReb3l
+Created by CaosRebeld3
 
 Nací en las cenizas de un mundo en peligro de extincion,  
 vivo jugando segun sus reglas. Ahora creo mis juegos y establezco 
