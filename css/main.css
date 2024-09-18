@@ -83,6 +83,10 @@ body {
 	height: 100px;
 	border-radius: 50%;
 }
+.videos{
+	width: 300px;
+	height:200px;
+}
 .oye {
 	width: 100px;
 	height: 100px;
@@ -159,6 +163,10 @@ a:hover {
 		top: 110px;
 		position: relative;
 	}	
+	.videos{
+		width: 500px;
+		height:300px;
+}
 	.presen {
 		width: 600px;
 		top: 95px;
