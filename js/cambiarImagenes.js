@@ -7,9 +7,9 @@
     var imagenes=new Array(
 
 
-        ['img/uno.png'],
+        ['img/lcdcuno.png'],
         
-        ['img/dos.png'],
+        ['img/lcdcdos.png'],
         
 
       );
