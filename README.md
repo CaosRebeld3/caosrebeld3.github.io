@@ -1,5 +1,4 @@
-Lo que hay aqui es todo de mi propiedad, imagenes etc... 
-CaosRebeld3
+Lo que hay aqui es todo de CaosRebeld3, imagenes etc... 
 Para pedir permiso por Mensaje directo en X(Twitter) @CaosRebeld3.
 # CaosRebeld3.github.io
 Created by CaosRebeld3
