@@ -6,11 +6,10 @@
 
     var imagenes=new Array(
 
-        ['img/lcdc.png'],
      
-        ['img/lcdcuno.png'],
+        ['img/lcdcuno.jpg'],
         
-        ['img/lcdcdos.png'],
+        ['img/lcdcdos.jpg'],
         
 
       );
@@ -36,16 +35,9 @@
 
         rotarImagenes();
 
-        setInterval(rotarImagenes,7000);
+        setInterval(rotarImagenes,2000);
 
     }
-
-
-
- 
-
-
- 
 
 
 
