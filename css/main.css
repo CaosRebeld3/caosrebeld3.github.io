@@ -84,9 +84,13 @@ body {
 	border-radius: 50%;
 }
 .videos{
-	position: relative;
+	display: block;
+	margin: auto;
 	width: 300px;
-	height:200px;
+	height: 200px;
+	position: relative;
+	top: 30px;
+	border-radius: 10px 13px 10px 13px;
 }
 .oye {
 	width: 100px;
@@ -165,6 +169,7 @@ a:hover {
 		position: relative;
 	}	
 	.videos{
+		top: 80px;
 		width: 500px;
 		height:300px;
 }
