@@ -1,5 +1,5 @@
 Lo que hay aqui es todo de CaosRebeld3, imagenes etc... 
-Para pedir permiso por Mensaje directo en X(Twitter) @CaosRebeld3.
+Para ponerse en contacto conmigo por Mensaje directo en X(Twitter) @CaosRebeld3.
 # CaosRebeld3.github.io
 Created by CaosRebeld3
 
