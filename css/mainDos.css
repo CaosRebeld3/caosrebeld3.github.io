@@ -1,0 +1,26 @@
+/* Created by CaosRebeld3 */
+
+.lcdcgm {
+	text-decoration: none; 
+	text-align: center; 
+    position: relative; top: 20px;
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 50px;
+} 
+.lcdcgm:hover { transform: scale(1.2); } 
+
+/* otras pantallas */
+
+@media screen and (min-width: 768px) {
+
+	.lcdcgm {
+		position: relative;
+		top: 70px;
+		width: 450px;
+		height: 75px;
+	}
+
+}
+
