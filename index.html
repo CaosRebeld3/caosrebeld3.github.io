@@ -6,7 +6,16 @@
     <title>YipiReb3lde</title>
     <link rel="icon" href="img/avatar.png" type="image/png">
     <style>
-        body {
+              * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            html, body {
+                height: 100%;
+            }
+            body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -67,6 +76,38 @@
             width: 250px;
             height: 50px;
         }
+        /* ANIMACION */
+         .animation-container {
+            position: relative;
+            width: 100%;
+            height: 300px; /* Ajusta la altura según sea necesario */
+            overflow: hidden;
+        }
+
+        .animated-image {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            opacity: 0;
+            animation: fade 5s infinite;
+           text-align: center;
+        }
+
+        .animated-image:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .animated-image:nth-child(2) {
+            animation-delay: 3s;
+        }
+
+        @keyframes fade {
+            0%, 20% { opacity: 1; }
+            20%, 100% { opacity: 0; }
+        }
+
+        /* FIN DE ANIMACION */
+
         @media (max-width: 600px) {
             .toggle {
                 display: block; /* Mostramos el botón en pantallas pequeñas */
@@ -74,8 +115,14 @@
         }
         @media (min-width: 601px) {
        
-            
+            /* hola */
         }
+        footer {
+            background-color: black;
+            color: silver;
+            text-align: center;
+            padding: 15px 0; /* Espaciado interno */
+    }
     </style>
 </head>
 <body>
@@ -91,12 +138,11 @@
             <a href="https://instagram.com/YipiReb3lde">Instagram</a>
         </nav>
         <div id="content">
-            <h2 id="section1">1</h2>
-            <p></p>
-            <h2 id="section2">2</h2>
-            <p></p>
-            <h2 id="section3">3</h2>
-            <p></p>
+            <h2 id="section1"></h2>
+              <div class="animation-container">
+                <img class="animated-image" src="img/mune1.png" alt="Imagen 1">
+                <img class="animated-image" src="img/mune2.png" alt="Imagen 2">
+            </div>
         </div>
     </div>
     
@@ -106,6 +152,9 @@
             menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
         }
     </script>
-
+  <footer>
+         <b> &#169; 2024 Creado por YipiReb3lde </b><br>
+         <em>No se usan cokies, no se recogen datos</em>
+    </footer>
 </body>
 </html>
