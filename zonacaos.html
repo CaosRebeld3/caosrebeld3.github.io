@@ -16,13 +16,13 @@
             flex-direction: column;
             height: 100vh;
             background-color: black;
-            color: whitesmoke;
+            color: silver;
         }
         .container {
             text-align: center;
             width: 90%;
             max-width: 800px;
-            color: whitesmoke;
+            position: relative; /* Necesario para el posicionamiento absoluto del menú */
         }
         nav {
             margin: 20px 0;
@@ -32,6 +32,11 @@
             background-color: yellowgreen;
             padding: 10px;
             border-radius: 5px;
+            position: absolute; /* Posiciona el menú de forma absoluta */
+            top: 60px; /* Ajusta según sea necesario */
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10; /* Asegura que el menú esté encima */
         }
         .menu a {
             color: black;
@@ -49,39 +54,33 @@
             padding: 10px 20px;
             cursor: pointer;
             border-radius: 5px;
-            display: none; /* Ocultamos el botón inicialmente */
+         /*   display: none; /* Ocultamos el botón inicialmente */ */
+            position: relative; /* Necesario para el posicionamiento */
+            z-index: 20; /* Asegura que el botón esté encima */
         }
-        .avatar{
+        .avatar {
             width: 50px;
             height: 50px;
             border-radius: 50%;
         }
-        .logo{
-            width: 200px;
+        .logo {
+            width: 250px;
             height: 50px;
         }
-
         @media (max-width: 600px) {
             .toggle {
                 display: block; /* Mostramos el botón en pantallas pequeñas */
             }
         }
         @media (min-width: 601px) {
-            .menu {
-                display: flex; /* Mostramos el menú en pantallas grandes */
-                justify-content: center;
-                padding: 0;
-            }
-            .menu a {
-                display: inline; /* Menú horizontal */
-                margin: 0 10px;
-            }
+       
+            
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img class="logo" src="img/zonacaos.png">
+        <img class="logo" src="img/zonacaos.png"><br>
         <button class="toggle" onclick="toggleMenu()">Menú</button>
         <nav class="menu" id="menu">
             <a href="index.html">Inicio</a>
@@ -91,14 +90,14 @@
             <a href="https://instagram.com/YipiReb3lde">Instagram</a>
         </nav>
         <div id="content">
-            <h2 id="sec1">Teoria del Caos</h2>
+            <h2 id="sec1">Teoría del Caos</h2>
             <p>
                 La teoría del caos es una fascinante intersección entre matemáticas, física y otras ciencias que explora los misterios de los sistemas complejos. Esta disciplina revela por qué algunos sistemas parecen danzar en un caos impredecible: no solo porque estén compuestos por múltiples elementos enredados, sino también porque incluso aquellos que parecen sencillos pueden volverse completamente indescifrables a largo plazo. ¡Es como si el universo estuviera lleno de sorpresas inesperadas! 
             </p>
             <h2 id="sec2">2</h2>
-            <p>Proximamente</p>
+            <p>Próximamente</p>
             <h2 id="sec3">3</h2>
-            <p>Proximamente</p>
+            <p>Próximamente</p>
         </div>
     </div>
     
