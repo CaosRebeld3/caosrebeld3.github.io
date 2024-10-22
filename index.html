@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Página Web Adaptativa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            text-align: center;
+            width: 90%;
+            max-width: 800px;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        .menu {
+            display: none;
+            background-color: #333;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 8px 12px;
+        }
+        .menu a:hover {
+            background-color: #555;
+        }
+        .toggle {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            display: none; /* Ocultamos el botón inicialmente */
+        }
+        @media (max-width: 600px) {
+            .toggle {
+                display: block; /* Mostramos el botón en pantallas pequeñas */
+            }
+        }
+        @media (min-width: 601px) {
+            .menu {
+                display: flex; /* Mostramos el menú en pantallas grandes */
+                justify-content: center;
+                padding: 0;
+            }
+            .menu a {
+                display: inline; /* Menú horizontal */
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenido a Mi Página</h1>
+        <button class="toggle" onclick="toggleMenu()">Menú</button>
+        <nav class="menu" id="menu">
+            <a href="#section1">Sección 1</a>
+            <a href="#section2">Sección 2</a>
+            <a href="#section3">Sección 3</a>
+        </nav>
+        <div id="content">
+            <h2 id="section1">Sección 1</h2>
+            <p>Contenido de la sección 1.</p>
+            <h2 id="section2">Sección 2</h2>
+            <p>Contenido de la sección 2.</p>
+            <h2 id="section3">Sección 3</h2>
+            <p>Contenido de la sección 3.</p>
+        </div>
+    </div>
+    
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
