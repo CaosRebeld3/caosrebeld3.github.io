@@ -16,13 +16,13 @@
             flex-direction: column;
             height: 100vh;
             background-color: black;
-            color: whitesmoke;
+            color: silver;
         }
         .container {
             text-align: center;
             width: 90%;
             max-width: 800px;
-            color: whitesmoke;
+            position: relative; /* Necesario para el posicionamiento absoluto del menú */
         }
         nav {
             margin: 20px 0;
@@ -32,6 +32,11 @@
             background-color: yellowgreen;
             padding: 10px;
             border-radius: 5px;
+            position: absolute; /* Posiciona el menú de forma absoluta */
+            top: 60px; /* Ajusta según sea necesario */
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10; /* Asegura que el menú esté encima */
         }
         .menu a {
             color: black;
@@ -49,15 +54,17 @@
             padding: 10px 20px;
             cursor: pointer;
             border-radius: 5px;
-            display: none; /* Ocultamos el botón inicialmente */
+         /*   display: none; /* Ocultamos el botón inicialmente */ */
+            position: relative; /* Necesario para el posicionamiento */
+            z-index: 20; /* Asegura que el botón esté encima */
         }
-        .avatar{
+        .avatar {
             width: 50px;
             height: 50px;
             border-radius: 50%;
         }
-        .logo{
-            width: 200px;
+        .logo {
+            width: 250px;
             height: 50px;
         }
         @media (max-width: 600px) {
@@ -66,15 +73,8 @@
             }
         }
         @media (min-width: 601px) {
-            .menu {
-                display: flex; /* Mostramos el menú en pantallas grandes */
-                justify-content: center;
-                padding: 0;
-            }
-            .menu a {
-                display: inline; /* Menú horizontal */
-                margin: 0 10px;
-            }
+       
+            
         }
     </style>
 </head>
