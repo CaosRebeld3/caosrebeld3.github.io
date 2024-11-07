@@ -1,0 +1,17 @@
+/* Created by CaosRebeld3 */
+
+* { }
+
+html, body { }
+
+body {
+	background: #191a1a ;
+	color: #ffffbf;
+}
+
+/* otras pantallas */
+
+@media screen and (min-width: 768px) {
+
+
+}
