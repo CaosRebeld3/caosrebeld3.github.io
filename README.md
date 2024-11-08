@@ -3,6 +3,6 @@ Copyright  CaosRebeld3.
 Created by CaosRebeld3
 
 
-Nací en las cenizas de un mundo en peligro de extinción,
-vivo jugando según las reglas de miserables y ruines.
-Comienza el juego: Misión derrocarlos.
+Nací en las cenizas de un mundo al borde de la extinción, 
+donde las reglas las dictan los miserables y los ruines.
+Comienza el juego: la misión derrocarlos.
