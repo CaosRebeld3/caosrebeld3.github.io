@@ -19,6 +19,24 @@ body {
 }
 
 /* Web */
+.info{
+	background: #202020;
+	width: 375px;
+	height: auto;
+	display: block;
+	margin: auto;
+	top: 10px;
+	position: relative;
+	border-radius: 10px 5px 10px 5px;
+}
+.parra {
+	text-align: center;
+	font-size: 22px;
+	font-family: cursive;
+	color: #eb0869;
+	position: relative;
+	margin: 10px;
+}
 .cabecera {
 	width: 100%;
 	height: auto;
@@ -27,8 +45,8 @@ body {
 	top: 0px;
 }
 #logo {
-	width: 270px;
-	height: 90px;
+	width: 300px;
+	height: 70px;
 	display: block;
 	margin: auto;
 }
@@ -108,9 +126,13 @@ a:hover {
 
 @media screen and (min-width: 768px) {
 
+	.info {
+		width: 450px;
+		top: 20px;
+	}
 	#logo {
-		width: 500px;
-		height: 175px;
+		width: 400px;
+		height: 100px;
 	}
 
 	#mages {
