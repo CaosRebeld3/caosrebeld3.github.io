@@ -21,7 +21,7 @@ body {
 /* Web */
 .info{
 	background: #202020;
-	width: 375px;
+	width: 350px;
 	height: auto;
 	display: block;
 	margin: auto;
@@ -31,7 +31,7 @@ body {
 }
 .parra {
 	text-align: center;
-	font-size: 22px;
+	font-size: 25px;
 	font-family: cursive;
 	color: #eb0869;
 	position: relative;
@@ -46,7 +46,7 @@ body {
 }
 #logo {
 	width: 300px;
-	height: 70px;
+	height: 80px;
 	display: block;
 	margin: auto;
 }
