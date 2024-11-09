@@ -31,9 +31,9 @@ body {
 }
 .parra {
 	text-align: center;
-	font-size: 25px;
-	font-family: cursive;
-	color: #eb0869;
+	font-size: 27px;
+	font-family: monospace;
+	color: #CD5C5C;
 	position: relative;
 	margin: 10px;
 }
@@ -109,11 +109,11 @@ a {
 }
 a:hover {
 	color: #52be80;
-;
+
 }
 .pie {
 	position: relative;
-	color: white;
+	color: silver;
 	font-family:  courier;
 	font-size: 19px;
 	top: 45px;
