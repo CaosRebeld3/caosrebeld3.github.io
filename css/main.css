@@ -6,7 +6,7 @@ html, body { }
 
 body {
 	background: black;
-	color: white;
+	color: silver;
 	font-size: 25px;
 	margin: 0;
 	padding: 60px 0 0 0;
@@ -20,7 +20,7 @@ body {
 
 /* Web */
 .info{
-	background: #202020;
+	background: linear-gradient(to bottom, #e74c3c, #c0392b, #9b111e);
 	width: 350px;
 	height: auto;
 	display: block;
@@ -33,7 +33,7 @@ body {
 	text-align: center;
 	font-size: 27px;
 	font-family: monospace;
-	color: #cfcfcf;
+	color: black;
 	position: relative;
 	margin: 10px;
 }
@@ -113,12 +113,13 @@ a:hover {
 }
 .pie {
 	position: relative;
-	color: silver;
+	color: black;
 	font-family:  courier;
 	font-size: 19px;
 	top: 45px;
 	text-align: center;
-	background: #261c2c;
+	background: linear-gradient(to bottom, #e74c3c, #c0392b, #9b111e);
+
 
 }
 
