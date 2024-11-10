@@ -1,172 +1,142 @@
-/* Created by CaosRebeld3 */
-
-* { }
-
-html, body { }
-
+/* Estilos básicos de la página */
 body {
-	background: black;
-	color: silver;
-	font-size: 25px;
-	margin: 0;
-	padding: 60px 0 0 0;
-	font-family: sans-serif;
-}
-.page {
-	margin: 0px auto;
-    width: 100%;
-   
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: #e74c3c;
 }
 
-/* Web */
+header {
+  background: #202020;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-icon .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #e74c3c;
+  margin: 5px 0;
+}
+
+/* Estilo del menú */
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu a {
+  color: #e74c3c;
+  text-decoration: none;
+  font-size: 18px;
+}
+.logo {
+  width: 300px;
+  height: 100px;
+  display: block;
+  margin: auto;
+}
 .info{
-	background: linear-gradient(to bottom, #e74c3c, #c0392b, #9b111e);
-	width: 350px;
-	height: auto;
-	display: block;
-	margin: auto;
-	top: 10px;
-	position: relative;
-	border-radius: 10px 5px 10px 5px;
+  background: transparent;
+  width: 350px;
+  height: auto;
+  display: block;
+  margin: auto;
+  top: 10px;
+  position: relative;
 }
 .parra {
-	text-align: center;
-	font-size: 27px;
-	font-family: monospace;
-	color: black;
-	position: relative;
-	margin: 10px;
-}
-.cabecera {
-	width: 100%;
-	height: auto;
-	background: transparent;
-	position: absolute;
-	top: 0px;
-}
-#logo {
-	width: 300px;
-	height: 100px;
-	display: block;
-	margin: auto;
-}
-.redes {
-	text-align: center;
-	margin: 0 auto;
-	position: relative;
-	top: 10px;
-}
-.presen{
-	display: block;
-	margin: auto;
-	position: relative;
-	top: 10px;
-	width: auto;
-	height: auto;
-	text-align: center;
-	font-size: 20px;
-	background: black;
-	border-radius: 10px 7px 10px 7px;
-}
-#creo {
-	top: 15px;
-	position: relative;
-	color: silver;
-}
-.captu{
-	width: 40px;
-	height: 40px;
-	
-}
-.captura {
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-}
-.videos{
-	display: block;
-	margin: auto;
-	width: 300px;
-	height: 200px;
-	position: relative;
-	top: 30px;
-	border-radius: 10px 13px 10px 13px;
-}
-
-#mages {
-	display: block;
-	margin: auto;
-	width: 300px;
-	height: 200px;
-	position: relative;
-	top: 30px;
-	border-radius: 10px 13px 10px 13px;
-}
-
-a {
-	text-decoration: none;
-	color: #f9e79f;
-}
-a:hover {
-	color: #52be80;
-
+  text-align: center;
+  font-size: 27px;
+  font-family: monospace;
+  border-style: inset;
+  border-color: #e74c3c;
+  position: relative;
+  margin: 10px;
+  color: #e74c3c;
+  border-left: none;
+  border-right: none;
 }
 .pie {
-	position: relative;
-	color: black;
-	font-family:  courier;
-	font-size: 19px;
-	top: 45px;
-	text-align: center;
-	background: linear-gradient(to bottom, #e74c3c, #c0392b, #9b111e);
+  position: relative;
+  color: black;
+  font-family:  courier;
+  font-size: 19px;
+  top: 45px;
+  text-align: center;
+  background: linear-gradient(to bottom, #e74c3c, #c0392b, #9b111e);
 
 
 }
+/* Estilo para dispositivos móviles */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #1c0d02;
+  }
 
-/* otras pantallas */
+  .menu li {
+    text-align: center;
+    padding: 10px 0;
+  }
 
-@media screen and (min-width: 768px) {
+  .menu-icon {
+    display: flex;
+  }
 
-	.info {
-		width: 450px;
-		top: 30px;
-	}
-	#logo {
-		width: 400px;
-		height: 125px;
-	}
-
-	#mages {
-		display: block;
-		margin: auto;
-		width: 450px;
-		height: 200px;
-		top: 110px;
-		position: relative;
-	}	
-	.videos{
-		top: 80px;
-		width: 500px;
-		height:300px;
+  .menu.show {
+    display: block;
+  }
+  .info{
+  background: transparent;
+  width: 350px;
+  height: auto;
+  display: block;
+  margin: auto;
+  top: 10px;
+  position: relative;
 }
-	.presen {
-		width: 600px;
-		top: 95px;
-	}
-	
-	.redes {
-		top: 98px;
-     }
-     .captu{
-		width: 50px;
-		height: 50px;
-	
-	}
-   
-	.pie {
-		font-size: 23px;
-		top: 150px;
-	}
+.parra {
+  text-align: center;
+  font-size: 27px;
+  font-family: monospace;
+  border-style: inset;
+  border-color: #e74c3c;
+  position: relative;
+  margin: 10px;
+  color: #e74c3c;
+  border-left: none;
+  border-right: none;
+}
+.pie {
+  position: relative;
+  color: black;
+  font-family:  courier;
+  font-size: 19px;
+  top: 45px;
+  text-align: center;
+  background: linear-gradient(to bottom, #e74c3c, #c0392b, #9b111e);
+
 
 }
-
+}
