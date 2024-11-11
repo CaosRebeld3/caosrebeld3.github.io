@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>TableroDelCaos</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="appel-mobile-wep-app-capable" content="yes" />
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" href="img/avatar.png" type="image/png">
+  <style type="text/css">
+    
+.board {
+    display: grid;
+    grid-template-columns: repeat(4, 70px); /*  columnas de 70px */
+    grid-template-rows: repeat(4, 70px);    /*  filas de 70px */
+    gap: 5px;
+}
+
+.cell {
+    width: 70px;
+    height: 70px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #999;
+    position: relative;
+}
+
+.cell img,
+.cell .text {
+    display: none; /* Ocultamos imágenes y textos inicialmente */
+}
+
+.cell .text {
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+}
+
+/* Estilo del enlace cuando no queden casillas visibles */
+#gameOverLink {
+    display: none;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+#gameOverLink:hover {
+    text-decoration: underline;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="menu-icon" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul id="menu" class="menu">
+        <li><a href="#"><img class="ava" src="img/avatar.png"></a></li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#">...</a></li>
+         </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <img class="tablero" src="img/table.png">
+   
+  <div class="infota">
+       <!--  Tablero -->
+     <a id="gameOverLink" href="https://caosrebeld3.github.io" target="_blank" style="display:none;">¡Juego terminado! Haz clic para continuar</a>
+    <div class="board" id="board"></div>
+    <script src="script.js"></script>
+      <!-- Fin tablero -->
+    <p class="parrata">
+      
+    </p>
+  </div>
+<footer class="pie">
+    <p>
+    Este sitio web no usa Cookies,<br> no recoje datos.<br><br>
+    
+        &#169; 2022-2024 CaosRebeld3 Created by CaosRebeld3. <br>
+  
+    </p>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
