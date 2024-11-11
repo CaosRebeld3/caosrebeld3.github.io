@@ -23,22 +23,22 @@ document.addEventListener("DOMContentLoaded", () => {
     ];
 
     const texts = [
-       ' ',
-       ' ',
-       ' ',
-       ' ',
-       ' ',
-       ' ',
-       ' ',
-       ' ',
-       ' ',
-       ' ',
-       ' ',
-       ' ',
-       ' ',
-       ' ',
-       ' ',
-       ' '      
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      ''
     ];
 
     let totalCells = 16; // Total de casillas en el tablero (4x4)
@@ -90,8 +90,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Si no quedan casillas visibles, mostramos el enlace
             if (remainingCells === 0) {
-                gameOverLink.style.display = 'block'; // Mostrar el enlace
+                // Esperamos un momento para asegurar que todas las celdas han desaparecido antes de mostrar el enlace
+                setTimeout(() => {
+                    gameOverLink.style.display = 'block'; // Mostrar el enlace
+                    gameOverLink.setAttribute('target', '_self'); // Aseguramos que el enlace se abra en la misma página
+                }, 300); // Retardo pequeño para que se vea el efecto de eliminación de celdas
             }
-        }, 1000); // 1000ms =  1 segundo
+        }, 50); // 1000ms = 1 segundo
     }
 });
