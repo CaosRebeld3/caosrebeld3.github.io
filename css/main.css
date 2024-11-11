@@ -83,9 +83,36 @@ nav {
   top: 45px;
   text-align: center;
   background: linear-gradient(to bottom, #e74c3c, #c0392b, #9b111e);
-
-
 }
+/* PROYECTO WEB */
+.tablero {
+  width: 300px;
+  height: 60px;
+  display: block;
+  margin: auto;
+}
+.infota {
+  background: transparent;
+  width: 350px;
+  height: auto;
+  display: block;
+  margin: auto;
+  top: 10px;
+  position: relative;
+}
+.parrata {
+    text-align: center;
+    font-size: 27px;
+    font-family: monospace;
+    position: relative;
+    margin: 10px;
+    color: #e74c3c;
+}
+ .ava {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
 /* Estilo para dispositivos móviles */
 @media (max-width: 768px) {
   .menu {
@@ -108,35 +135,57 @@ nav {
     display: block;
   }
   .info{
-  background: transparent;
-  width: 350px;
-  height: auto;
-  display: block;
-  margin: auto;
-  top: 10px;
-  position: relative;
-}
-.parra {
-  text-align: center;
-  font-size: 27px;
-  font-family: monospace;
-  border-style: inset;
-  border-color: #e74c3c;
-  position: relative;
-  margin: 10px;
-  color: #e74c3c;
-  border-left: none;
-  border-right: none;
-}
-.pie {
-  position: relative;
-  color: black;
-  font-family:  courier;
-  font-size: 19px;
-  top: 45px;
-  text-align: center;
-  background: linear-gradient(to bottom, #e74c3c, #c0392b, #9b111e);
+    background: transparent;
+    width: 350px;
+    height: auto;
+    display: block;
+    margin: auto;
+    top: 10px;
+    position: relative;
+  }
+  .parra {
+      text-align: center;
+      font-size: 27px;
+      font-family: monospace;
+      border-style: inset;
+      border-color: #e74c3c;
+      position: relative;
+      margin: 10px;
+      color: #e74c3c;
+      border-left: none;
+      border-right: none;
+  }
+  .pie {
+      position: relative;
+      color: black;
+      font-family:  courier;
+      font-size: 19px;
+      top: 45px;
+      text-align: center;
+      background: linear-gradient(to bottom, #e74c3c, #c0392b, #9b111e);
 
-
-}
+  }
+  /* PROYECTO WEB */
+  .infota{
+    background: transparent;
+    width: 350px;
+    height: auto;
+    display: block;
+    margin: auto;
+    top: 10px;
+    position: relative;
+  }
+  .parrata{
+      text-align: center;
+      font-size: 27px;
+      font-family: monospace;
+      position: relative;
+      margin: 10px;
+      color: #e74c3c;
+  }
+  .ava {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
 }
