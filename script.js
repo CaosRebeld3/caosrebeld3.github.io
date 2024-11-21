@@ -4,22 +4,22 @@ document.addEventListener("DOMContentLoaded", () => {
     
     // Definimos las imágenes y los textos que aparecerán en cada casilla
     const images = [
-        'img/avatar.png',
-        'img/avatar.png',
-        'img/avatar.png',
-        'img/avatar.png',
-        'img/avatar.png',
-        'img/avatar.png',
-        'img/avatar.png',
-        'img/avatar.png',
-        'img/avatar.png',
-        'img/avatar.png',
-        'img/avatar.png',
-        'img/avatar.png',
-        'img/avatar.png',
-        'img/avatar.png',
-        'img/avatar.png',
-        'img/avatar.png'
+        'img/yavatar.png',
+        'img/yavatar.png',
+        'img/yavatar.png',
+        'img/yavatar.png',
+        'img/yavatar.png',
+        'img/yavatar.png',
+        'img/yavatar.png',
+        'img/yavatar.png',
+        'img/yavatar.png',
+        'img/yavatar.png',
+        'img/yavatar.png',
+        'img/yavatar.png',
+        'img/yavatar.png',
+        'img/yavatar.png',
+        'img/yavatar.png',
+        'img/yavatar.png'
     ];
 
     const texts = [
