@@ -2,43 +2,24 @@ document.addEventListener("DOMContentLoaded", () => {
     const board = document.getElementById('board');
     const gameOverLink = document.getElementById('gameOverLink');
     
-    // Definimos las imágenes y los textos que aparecerán en cada casilla
-    const images = [
-        'img/yavatar.png',
-        'img/yavatar.png',
-        'img/yavatar.png',
-        'img/yavatar.png',
-        'img/yavatar.png',
-        'img/yavatar.png',
-        'img/yavatar.png',
-        'img/yavatar.png',
-        'img/yavatar.png',
-        'img/yavatar.png',
-        'img/yavatar.png',
-        'img/yavatar.png',
-        'img/yavatar.png',
-        'img/yavatar.png',
-        'img/yavatar.png',
-        'img/yavatar.png'
-    ];
-
+    // Definimos los textos que aparecerán en cada casilla
     const texts = [
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      ''
+      'La',
+      'Chica',
+      'Del',
+      'Ca',
+      'le',
+      'fac',
+      'tor',
+      'aca',
+      'ba',
+      'ra',
+      'con',
+      'los',
+      'rui',
+      'nes',
+      'siem',
+      'pre'
     ];
 
     let totalCells = 16; // Total de casillas en el tablero (4x4)
@@ -52,20 +33,14 @@ document.addEventListener("DOMContentLoaded", () => {
             cell.dataset.row = row;
             cell.dataset.col = col;
 
-            // Asignamos una imagen y un texto a cada casilla
-            const img = document.createElement('img');
-            img.src = images[row * 4 + col]; // Asignamos una imagen diferente para cada casilla
-            img.alt = `Imagen ${row * 4 + col + 1}`;
-
-            // Establecemos el tamaño de la imagen a 50x50px
-            img.style.width = '70px';
-            img.style.height = '70px';
-
-            cell.appendChild(img);
-
+            // Crear el div para el texto
             const text = document.createElement('div');
             text.classList.add('text');
             text.textContent = texts[row * 4 + col]; // Asignamos un texto diferente para cada casilla
+
+            // Aquí puedes agregar el tamaño del texto
+            text.style.fontSize = '20px';  // Ajusta el tamaño de la fuente (puedes cambiar el valor)
+
             cell.appendChild(text);
 
             // Evento de clic
@@ -78,10 +53,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // Función que maneja el clic en las casillas
     function handleCellClick(cell) {
         const text = cell.querySelector('.text');
-        const img = cell.querySelector('img');
 
         text.style.display = 'block';  // Mostramos el texto
-        img.style.display = 'block';   // Mostramos la imagen
         
         // Después del tiempo establecido, eliminar la casilla
         setTimeout(() => {
@@ -96,6 +69,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     gameOverLink.setAttribute('target', '_self'); // Aseguramos que el enlace se abra en la misma página
                 }, 300); // Retardo pequeño para que se vea el efecto de eliminación de celdas
             }
-        }, 50); // 1000ms = 1 segundo
+        }, 300); // 1000ms = 1 segundo
     }
 });
