@@ -17,7 +17,19 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-
+.tablerocaos {
+  width: 25px;
+  height: 25px;
+}
+.redes {
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+}
+.itc{
+  width: 75px;
+  height: 25px;
+}
 .menu-icon {
   display: none;
   flex-direction: column;
@@ -75,13 +87,33 @@ nav {
   border-left: none;
   border-right: none;
 }
-.pie {
+.infodos {
+  background: transparent;
+  width: 350px;
+  height: auto;
+  display: block;
+  margin: auto;
+  top: 10px;
   position: relative;
-  color: black;
-  font-family:  courier;
-  font-size: 19px;
-  top: 45px;
+}
+.parrafo {
   text-align: center;
+  font-size: 25px;
+  font-family: monospace;
+  border-style: inset;
+  border-color: darkred;
+  position: relative;
+  margin: 10px;
+  color: #e74c3c;
+  border-bottom: none;
+  border-top: none;
+}
+.pie {
+  position: relative;   
+  width: 100%;  
+  color: black; 
+  text-align: center; 
+  font-size: 13px;
   background: linear-gradient(to bottom, #e74c3c, #c0392b, #9b111e);
 }
 /* PROYECTO WEB */
@@ -115,6 +147,19 @@ nav {
   }
 /* Estilo para dispositivos móviles */
 @media (max-width: 768px) {
+  .tablerocaos {
+    width: 25px;
+    height: 25px;
+  }
+  .redes {
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+  }
+  .itc{
+    width: 75px;
+    height: 25px;
+  }
   .menu {
     display: none;
     flex-direction: column;
@@ -156,14 +201,12 @@ nav {
       border-right: none;
   }
   .pie {
-      position: relative;
-      color: black;
-      font-family:  courier;
-      font-size: 19px;
-      top: 45px;
-      text-align: center;
+      position: relative; 
+      width: 100%;  
+      color: black; 
+      text-align: center; 
+      font-size: 13px;
       background: linear-gradient(to bottom, #e74c3c, #c0392b, #9b111e);
-
   }
   /* PROYECTO WEB */
   .infota{
